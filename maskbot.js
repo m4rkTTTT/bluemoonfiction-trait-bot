@@ -22,7 +22,7 @@ client.on('message', message => {
             message.channel.send('not a valid AntiMask number');
         } else {
                 //567 is maximum minted number currently, will try to pull this data from somewhwhere else instad of manual updates
-            if (number > 567){
+            if (number > 1489){
                 message.channel.send('Mask not yet minted!')
             } else { 
                     //'masksite' is the opensea api with all data, returned in json format
