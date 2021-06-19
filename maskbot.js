@@ -19,7 +19,7 @@ client.on('message', message => {
          number = message.content.slice( 1 );
             //check for any letters after prefix, if so do not continue
         if (regExp.test(number)) { 
-            message.channel.send('not a valid AntiMask number');
+            message.channel.send('not a valid Antimask number');
         } else {
                 //567 is maximum minted number currently, will try to pull this data from somewhwhere else instad of manual updates
             if (number > 1489){
@@ -47,10 +47,10 @@ client.on('message', message => {
                         //embed all data into discord message
                     var Embed = new Discord.MessageEmbed()
                         .setColor('#0099ff')
-                        .setTitle('AntiMask #' + number)
+                        .setTitle('Antimask #' + number)
                         .setURL('https://opensea.io/assets/0x72bb198baab62e1f1f6b60d2bb37c63a303a58ad/' + number)
-                        .setAuthor('Hakuna Masktata', 'https://ipfs.io/ipfs/Qme9jtR4a5pMrjC5U5k1tFDXhGzub4fYuq2GJEuNghmrw9/image.png', 'https://antimasks.io')
-                        .setThumbnail('https://lh3.googleusercontent.com/9j_D_ScMF28a80WnpIltw_f1Ds6KvuQ-Pq0v0UuYdWN806Ob_nxob-kofLA7AbPJGsFV4iY6yOELriUrRMkyGwWwxCk2YkFTJjeYfA=s128')
+                        .setAuthor('Hakuna Masktata', 'https://ipfs.io/ipfs/QmZYj78YgTSsA1do9AWEpPY87N6mJ8T9rpujoqFJ3cr7TC', 'https://opensea.io/collection/theantimasks')
+                        .setThumbnail('https://ipfs.io/ipfs/QmZYj78YgTSsA1do9AWEpPY87N6mJ8T9rpujoqFJ3cr7TC')
                         .addField('Background: ', '`' + background + '`')
                         .addField('character: ', '`' + character + '`')
                         .addField('Item: ', '`' + item + '`')
